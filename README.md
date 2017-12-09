@@ -1,1 +1,5 @@
-# Deep_Learning_in_Digit_Recognizer
+# Deep Learning with Convolutional Neural Networks
+
+![CNN1](https://github.com/PizzaPat/AI_Presentation_Fall_2017/blob/master/CNN1.png)
+![CNN2](https://github.com/PizzaPat/AI_Presentation_Fall_2017/blob/master/CNN2.png)
+![CNN3](https://github.com/PizzaPat/AI_Presentation_Fall_2017/blob/master/CNN3.png)
