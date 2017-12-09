@@ -15,11 +15,6 @@ K.set_image_dim_ordering('th')
 
 import matplotlib.pyplot as plt
 
-
-"""Run through example, explain line by line
-by Patrapee Pongtana on tutorial:
-https://machinelearningmastery.com/handwritten-digit-recognition-using-convolutional-neural-networks-python-keras/"""
-
 """Load the data from MNIST"""
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
 
@@ -28,7 +23,7 @@ plt.subplot(221)
 plt.imshow(X_train[2], cmap=plt.get_cmap('gray'))
 plt.subplot(222)
 plt.imshow(X_train[3])
-plt.show()
+#plt.show()
 """Randomize the seed"""
 seed = 7
 numpy.random.seed(seed)
@@ -38,7 +33,7 @@ X_train.shape[1] = width = 28
 X_train.shape[2] = height = 28
 """
 num_pixels = X_train.shape[1] * X_train.shape[2]
-print('Number of picture pixel',num_pixels)
+#print('Number of picture pixel',num_pixels)
 
 """Turn the shape into the vector of a vector. Row of 60000 samples.
 	and 784 columns"""
@@ -49,16 +44,16 @@ X_test = X_test.reshape(X_test.shape[0], 1, 28, 28).astype('float32')
 #Normalize all inputs from 0-255 to 0-1
 X_train = X_train /255
 X_test = X_test /255
-print(X_train[59999])
+#print(X_train[59999])
 
 """Class label: Convert 1 dimension array into 10 dimensions"""
-print('Class label')
-print(y_train)
+#print('Class label')
+#print(y_train)
 y_train = np_utils.to_categorical(y_train)
 y_test = np_utils.to_categorical(y_test)
-print('After categorical\n',y_train)
+#print('After categorical\n',y_train)
 num_classes = y_test.shape[1]
-print('Number of class: ', num_classes)
+#print('Number of class: ', num_classes)
 
 """CNN Architecture, Initialize the Model"""
 def CNN_model():
